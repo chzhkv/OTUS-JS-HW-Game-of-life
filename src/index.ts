@@ -1,3 +1,4 @@
+import "./styles.css";
 import { addForm } from "./addForm";
 
 const rootEl = document.querySelector("#app");
