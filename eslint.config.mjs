@@ -16,7 +16,7 @@ export default tseslint.config(
       files: ["**/*.{js,mjs,cjs,ts}"]
     },
     {
-      ignores: ["coverage/*", "dist/*"],
+      ignores: ["coverage/*", "dist/*", "**/*.config.js"],
     },
     {
         files: ["**/*.test.ts"],
