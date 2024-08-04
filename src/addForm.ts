@@ -12,6 +12,8 @@
 /**
  * @param {HTMLElement} el
  */
+
+import "./styles.css";
 export function addForm(el: Element) {
   // el = document.createElement('div');
   const input = document.createElement("input");

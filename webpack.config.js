@@ -1,8 +1,5 @@
-// eslint-disable-next-line
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// eslint-disable-next-line
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-// eslint-disable-next-line
 const path = require("node:path");
 
 module.exports = {
@@ -25,6 +22,10 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
